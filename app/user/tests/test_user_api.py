@@ -14,7 +14,7 @@ TOKEN_URL = reverse('user:token')
 
 def create_user(**params):
     """Helper function for creating and return a new user"""
-    return get_user_model().objects.create(**params)
+    return get_user_model().objects.create_user(**params)
 
 
 class PublicUserApiTests(TestCase):
